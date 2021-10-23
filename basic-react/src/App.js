@@ -1,5 +1,7 @@
 import React from 'react';
 import Hello from './Hello';
+import Wrapper from './Wrapper';
+
 import './App.css';
 
 function App() {
@@ -11,14 +13,17 @@ function App() {
     padding: '1rem',
   }
   return (
-    <div className="app">
+    <Wrapper>
       <div>04.JSX</div>
       <div style={style}>{name}</div>
       <Hello />
       <Hello />
       <Hello />
+      <br/>
       <div>05.Props</div>
-    </div>
+      <Hello name='basic react' color='red'/>
+      <Hello color='pink'/>
+    </Wrapper>
   );
 }
 
