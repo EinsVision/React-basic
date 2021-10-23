@@ -3,6 +3,7 @@ import Hello from './Hello';
 import Wrapper from './Wrapper';
 
 import './App.css';
+import Counter from './Counter';
 
 function App() {
   const name = 'Practice Basic React';
@@ -27,6 +28,9 @@ function App() {
       <div>06.Conditional Rendering</div>
       <Hello name='basic react' color='green' isSpecial={true} />
       <Hello name='basic vue' color='purple' isSpecial={false} />
+      <br />
+      <div>07.useState</div>
+      <Counter />
     </Wrapper>
   );
 }
