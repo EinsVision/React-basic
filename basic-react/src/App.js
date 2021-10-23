@@ -4,6 +4,7 @@ import Wrapper from './Wrapper';
 
 import './App.css';
 import Counter from './Counter';
+import InputSample from './InputSample';
 
 function App() {
   const name = 'Practice Basic React';
@@ -31,6 +32,9 @@ function App() {
       <br />
       <div>07.useState</div>
       <Counter />
+      <br />
+      <div>08.Manage input state</div>
+      <InputSample />
     </Wrapper>
   );
 }
