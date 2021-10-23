@@ -23,6 +23,10 @@ function App() {
       <div>05.Props</div>
       <Hello name='basic react' color='red'/>
       <Hello color='pink'/>
+      <br/>
+      <div>06.Conditional Rendering</div>
+      <Hello name='basic react' color='green' isSpecial={true} />
+      <Hello name='basic vue' color='purple' isSpecial={false} />
     </Wrapper>
   );
 }

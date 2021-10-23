@@ -8,7 +8,11 @@ function Hello(props) {
     <>
       <div style={{
         color: props.color
-      }}>Hello React! {props.name}</div>
+      }}>
+        {/* {props.isSpecial ? <b>*</b> : null} */}
+        {props.isSpecial && <b>*</b>}
+        Hello React! {props.name}
+      </div>
     </>
   )
 }
