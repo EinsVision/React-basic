@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function InputSamples() {
+
+  // 현재 focus를 name input 에 넣고 싶다. useRef()를 통해 객체가 만들어 진다.
+  const nameInput = useRef();
 
   // useState로 객체 헝태의 상태를 관리해준다.
   const [inputs, setInputs] = useState({
@@ -33,6 +36,7 @@ function InputSamples() {
       name: '',
       nickname: '',
     });
+    nameInput.current.focus();
   }
 
   return (
@@ -43,6 +47,7 @@ function InputSamples() {
         placeholder='name' 
         onChange={onChange} 
         value={name}
+        ref={nameInput}
       />
       <input 
         type='text' 
@@ -50,6 +55,7 @@ function InputSamples() {
         placeholder='nickname' 
         onChange={onChange} 
         value={nickname}
+        // ref={nameInput}
       />
       <button onClick={onReset}>Initialize</button>
       <div>

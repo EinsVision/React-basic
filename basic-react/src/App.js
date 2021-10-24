@@ -46,6 +46,8 @@ function App() {
       <InputSamples />
 
       <br />
+      <div>10.Selects specific DOM using useRef</div>
+      
 
     </Wrapper>
   );
