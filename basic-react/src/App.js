@@ -6,6 +6,7 @@ import './App.css';
 import Counter from './Counter';
 import InputSample from './InputSample';
 import InputSamples from './InputSamples';
+import UserList from './UserList';
 
 function App() {
   const name = 'Practice Basic React';
@@ -47,7 +48,10 @@ function App() {
 
       <br />
       <div>10.Selects specific DOM using useRef</div>
-      
+
+      <br />
+      <div>11.Array Rendering</div>
+      <UserList />
 
     </Wrapper>
   );
